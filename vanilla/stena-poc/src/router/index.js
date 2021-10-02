@@ -3,6 +3,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Nemo from "../views/Nemo.vue";
+import Trade from "../views/Trade.vue";
 
 Vue.use(VueRouter);
 
@@ -26,10 +27,15 @@ const routes = [
     name: "Nemo",
     component: Nemo,
   },
+  {
+    path: "/trade",
+    name: "trade",
+    "component": Trade
+  }
 ];
 
 const router = new VueRouter({
-    mode: 'history',
+  mode: "history",
   routes,
 });
 

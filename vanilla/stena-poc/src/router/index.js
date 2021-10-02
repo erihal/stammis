@@ -1,6 +1,8 @@
+/* eslint-disable prettier/prettier */
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Nemo from "../views/Nemo.vue";
 
 Vue.use(VueRouter);
 
@@ -19,9 +21,15 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/nemo",
+    name: "Nemo",
+    component: Nemo,
+  },
 ];
 
 const router = new VueRouter({
+    mode: 'history',
   routes,
 });
 

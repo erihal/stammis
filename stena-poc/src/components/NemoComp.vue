@@ -19,7 +19,7 @@
       </v-list-item>
 
       <v-card-actions>
-        <v-btn outlined rounded text> Claim points </v-btn>
+        <v-btn class="claim" color="white" outlined rounded text> Claim points </v-btn>
       </v-card-actions>
     </v-card>
     <!-- Second card--->
@@ -42,7 +42,7 @@
       </v-list-item>
 
       <v-card-actions>
-        <v-btn outlined rounded text @click.stop="dialog = true">
+        <v-btn class="challenge"  outlined rounded text @click.stop="dialog = true">
           Start challenge
         </v-btn>
       </v-card-actions>
@@ -92,7 +92,7 @@
       </v-list-item>
 
       <v-card-actions>
-        <v-btn outlined rounded text> Start challenge </v-btn>
+        <v-btn class="challenge" outlined rounded text> Start challenge </v-btn>
       </v-card-actions>
     </v-card>
   </div>
@@ -107,3 +107,12 @@ export default {
   },
 };
 </script>
+
+<style>
+  .challenge{
+    background-color: rgb(177, 228, 198);
+  }
+  .claim{
+    background-color: rgba(0, 0, 255, 0.493);
+  }
+</style>

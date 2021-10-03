@@ -16,13 +16,14 @@
             <v-img max-width="64" contain src="https://www.stena.com/app/themes/stena-theme/resources/assets/images/logotype_flag.png"></v-img>
           </router-link>
    
-
         <v-toolbar-title>Stammis</v-toolbar-title>
-
-        <v-spacer></v-spacer>
-
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
+         <v-spacer></v-spacer>
+   
+        <v-btn text>
+          <span>
+            Level 3 
+            <v-icon>mdi-trophy-variant-outline</v-icon>
+          </span>
         </v-btn>
       </v-app-bar>
 

@@ -11,9 +11,13 @@
       </v-system-bar>
 
       <v-app-bar color="primary" flat>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        
+          <router-link to="/">
+            <v-img max-width="64" contain src="https://www.stena.com/app/themes/stena-theme/resources/assets/images/logotype_flag.png"></v-img>
+          </router-link>
+   
 
-        <v-toolbar-title>Stena Stammis</v-toolbar-title>
+        <v-toolbar-title>Stammis</v-toolbar-title>
 
         <v-spacer></v-spacer>
 

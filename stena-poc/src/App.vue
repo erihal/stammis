@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-card>
+    <v-card max-width="400">
       <v-system-bar color="#000000" dark>
         <v-spacer></v-spacer>
 

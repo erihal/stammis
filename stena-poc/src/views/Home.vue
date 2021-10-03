@@ -113,6 +113,23 @@ export default {
           id: 61,
           text: "Koka vatten? Använd vattenkokare som använder mindre energi än en kastrull!",
         },
+        {
+          id: 89,
+          text: "Om en familj på fyra personer stänger av kranen medan de borstar sina tänder sparar de tillsammans 100 liter vatten på en dag."
+        },
+        {
+          id: 102,
+          text: "För varje minut som kranen står och rinner går det åt 6 liter vatten."
+        },
+        {
+          id: 31,
+          text: "Ett fyllt badkar motsvarar 150 liter vatten. En dusch på 3 minuter motsvarar 36 liter."
+        },
+        {
+          id: 19,
+          text: "En toalett som smårinner kan betyda ett slöseri på 1900 liter per dygn."
+        }
+      
       ];
       return tips[Math.floor(Math.random() * tips.length)];
     },

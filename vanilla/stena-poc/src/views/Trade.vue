@@ -10,7 +10,7 @@
               <v-card-title class="text-h5" v-text="item.title"></v-card-title>
 
               <v-card-actions>
-                <v-btn text> Listen Now </v-btn>
+                <v-btn text>Listen Now </v-btn>
               </v-card-actions>
             </div>
 

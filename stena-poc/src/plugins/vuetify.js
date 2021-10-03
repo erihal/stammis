@@ -10,7 +10,8 @@ export default new Vuetify({
         primary: "#ffffff",
         secondary: "#E20426",
         accent: "#004C92",
-        error: "#b71c1c", // pink 28963C orange E20426 green E20426
+        success: "#5DA770",
+        error: "#F67C40", // pink 28963C orange F67C40 green 5DA770
       },
     },
   },

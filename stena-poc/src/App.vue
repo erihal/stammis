@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-card mx-width="400" class="mx-auto">
+    <v-card mx-width="400" height="100%" class="mx-auto" width="520">
       <v-system-bar color="#000000" dark>
         <v-spacer></v-spacer>
 
@@ -11,17 +11,20 @@
       </v-system-bar>
 
       <v-app-bar color="primary" flat>
-        
-          <router-link to="/">
-            <v-img max-width="64" contain src="https://www.stena.com/app/themes/stena-theme/resources/assets/images/logotype_flag.png"></v-img>
-          </router-link>
-   
+        <router-link to="/">
+          <v-img
+            max-width="64"
+            contain
+            src="https://www.stena.com/app/themes/stena-theme/resources/assets/images/logotype_flag.png"
+          ></v-img>
+        </router-link>
+
         <v-toolbar-title>Stammis</v-toolbar-title>
-         <v-spacer></v-spacer>
-   
-        <v-btn text>
+        <v-spacer></v-spacer>
+
+        <v-btn text to="/badges">
           <span>
-            Level 3 
+            Level 3
             <v-icon>mdi-trophy-variant-outline</v-icon>
           </span>
         </v-btn>

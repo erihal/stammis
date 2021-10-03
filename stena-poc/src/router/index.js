@@ -2,8 +2,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Nemo from "../views/Nemo.vue";
-import Trade from "../views/Trade.vue";
 
 Vue.use(VueRouter);
 
@@ -23,14 +21,14 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: "/nemo",
-    name: "Nemo",
-    component: Nemo,
+    path: "/badges",
+    name: "Badges",
+    component: () => import("../views/Badges.vue"),
   },
   {
     path: "/trade",
     name: "trade",
-    "component": Trade
+    component: () => import("../views/Trade.vue"),
   },
   {
     path: "/tips",

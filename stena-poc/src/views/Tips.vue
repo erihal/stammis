@@ -1,44 +1,19 @@
 <template>
   <v-container>
-    <v-container>
-          <v-row dense>
-            <v-col cols="12">
-              <v-card>
-                <v-card-title class="text-h5"
-                  >Bra jobbat! <v-spacer></v-spacer>
-                  <v-icon color="secondary">mdi-star</v-icon></v-card-title
-                >
-                <v-card class="mx-4">
-                  <v-progress-linear
-                    color="accent"
-                    height="10"
-                    value="70"
-                    striped
-                  ></v-progress-linear>
-                </v-card>
-                <v-card-subtitle
-                  >Du har samlat 15% fler poäng än förra månaden!
-                </v-card-subtitle>
-                <v-card-actions>
-                  <v-btn text
-                    >Använd poäng <v-icon>mdi-chevron-right</v-icon></v-btn
-                  ><v-spacer></v-spacer>
-                </v-card-actions>
-              </v-card>
-            </v-col>
-          </v-row>
+   
+         
 
         <v-container>
           <v-row dense>
-            <v-col cols="12">
+            <v-col v-for="(item, i) in getTips()" :key="i" cols="12">
               <v-card>
                 <v-card-title class="text-h5 font-weight-thin"
-                  >Tips #{{ getTip().id }}<v-spacer></v-spacer>
+                  >Tips #{{ item.id }}<v-spacer></v-spacer>
                   <v-icon>mdi-lightbulb-on-outline </v-icon></v-card-title
                 >
-                <v-card-subtitle>{{ getTip().text }}</v-card-subtitle>
+                <v-card-subtitle>{{ item.text }}</v-card-subtitle>
                 <v-card-actions>
-                  <v-btn text>Fler tips <v-icon>mdi-chevron-right</v-icon></v-btn
+                  <v-btn text>Mer på samma ämne<v-icon>mdi-chevron-right</v-icon></v-btn
                   ><v-spacer></v-spacer><v-icon>mdi-share-variant-outline</v-icon>
                 </v-card-actions>
               </v-card>
@@ -51,9 +26,9 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Tips",
   methods: {
-    getTip: () => {
+    getTips: () => {
       const tips = [
         {
           id: 47,
@@ -81,7 +56,7 @@ export default {
         }
       
       ];
-      return tips[Math.floor(Math.random() * tips.length)];
+      return tips.sort( () => .5 - Math.random() );
     },
   },
 

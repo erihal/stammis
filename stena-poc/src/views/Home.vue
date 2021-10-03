@@ -68,7 +68,7 @@
             >
             <v-card-subtitle>{{ getTip().text }}</v-card-subtitle>
             <v-card-actions>
-              <v-btn text>Fler tips <v-icon>mdi-chevron-right</v-icon></v-btn
+              <v-btn to="/tips" text>Fler tips <v-icon>mdi-chevron-right</v-icon></v-btn
               ><v-spacer></v-spacer><v-icon>mdi-share-variant-outline</v-icon>
             </v-card-actions>
           </v-card>
